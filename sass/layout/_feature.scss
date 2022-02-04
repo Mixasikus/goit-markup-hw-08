@@ -1,0 +1,15 @@
+.feature__icon {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.feature .feature__title {
+  @include font();
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}

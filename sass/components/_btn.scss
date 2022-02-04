@@ -1,0 +1,19 @@
+.button__universal {
+  @include font(16px, 700, 1.9, 0.06em);
+  color: var(--primary-white-color);
+
+  background-color: var(--color-button);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  justify-content: center;
+  transition: background-color var(--transition);
+  &:hover,
+  &:focus {
+    background-color: var(--color-button-hover);
+  }
+}

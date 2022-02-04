@@ -1,0 +1,31 @@
+.team__item .team__title,
+.team__item .team-profession {
+  @include font(16px, null, 1.19, null);
+}
+
+.team__item .team__title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.team {
+  background-color: var(--secondary-background-color);
+  text-align: center;
+}
+
+.team__item {
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+}
+
+.team__img {
+  margin-bottom: 30px;
+}
+
+.team__profession {
+  margin-bottom: 16px;
+}

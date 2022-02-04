@@ -1,0 +1,21 @@
+.work {
+  text-align: center;
+  padding-top: 0;
+  --card-item: 3;
+
+  &__text {
+    @include font();
+    position: absolute;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px;
+    width: 100%;
+
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+  }
+
+  &__wrap {
+    position: relative;
+  }
+}

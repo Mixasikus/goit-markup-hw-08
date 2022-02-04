@@ -1,0 +1,17 @@
+/* logo header */
+.logo {
+  @include font(26px, 700, 1.2, null);
+  display: inline-block;
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+}
+
+.logo__header {
+  color: var(--black-color);
+}
+
+/* logo footer */
+.logo__footer {
+  color: var(--primary-white-color);
+  display: inline-block;
+}
