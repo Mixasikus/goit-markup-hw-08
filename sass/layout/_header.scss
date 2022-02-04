@@ -1,10 +1,18 @@
-.header__container {
-  display: flex;
-  align-items: center;
-}
+.header {
+  background-color: var(--primary-white-color);
 
-.header__container .logo {
-  margin-right: 93px;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__container .logo {
+    margin-right: 93px;
+  }
+
+  &__border {
+    border-bottom: 1px solid var(--color-border);
+  }
 }
 
 .current {
@@ -60,8 +68,4 @@
 .contact-list__icon {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.border-header {
-  border-bottom: 1px solid var(--color-border);
 }

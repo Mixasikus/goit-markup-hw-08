@@ -66,15 +66,10 @@ body {
 }
 
 .item {
-  margin-left: var(--card-gap);
   margin-top: var(--card-gap);
-  flex-basis: calc(100% / var(--card-item) - var(--card-gap));
 }
 
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(var(--card-gap) * -1);
   margin-top: calc(var(--card-gap) * -1);
 }
 
@@ -87,10 +82,22 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 776px;
+  }
 }
 
 .section {
@@ -119,10 +126,10 @@ body {
 }
 
 .section__title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .button__universal {
@@ -397,6 +404,10 @@ body {
   color: var(--primary-white-color);
 }
 
+.header {
+  background-color: var(--primary-white-color);
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -404,6 +415,10 @@ body {
 
 .header__container .logo {
   margin-right: 93px;
+}
+
+.header__border {
+  border-bottom: 1px solid var(--color-border);
 }
 
 .current {
@@ -459,10 +474,6 @@ body {
 .contact-list__icon {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.border-header {
-  border-bottom: 1px solid var(--color-border);
 }
 
 .hero {
@@ -530,8 +541,15 @@ body {
   position: relative;
 }
 
+.team {
+  background-color: var(--secondary-background-color);
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .team__item .team__title,
-.team__item .team-profession {
+.team__item .team__profession {
   font-size: 16px;
   line-height: 1.19;
 }
@@ -540,11 +558,6 @@ body {
   color: var(--title-text-color);
   font-weight: 500;
   margin-bottom: 10px;
-}
-
-.team {
-  background-color: var(--secondary-background-color);
-  text-align: center;
 }
 
 .team__item {
