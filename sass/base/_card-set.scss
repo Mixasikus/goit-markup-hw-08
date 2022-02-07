@@ -2,20 +2,23 @@
   // flex-basis: calc(100% / var(--card-item) - var(--card-gap));
   // margin-left: var(--card-gap);
   margin-top: var(--card-gap);
-  @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / var(--card-item) - var(--card-gap));
-    margin-left: var(--card-gap);
-  }
 }
+// @media screen and (min-width: 768px) {
+//   flex-basis: calc(100% / var(--card-item) - var(--card-gap));
+//   margin-left: var(--card-gap);
+// }
 
 .card-set {
   // display: flex;
   // flex-wrap: wrap;
   // margin-left: calc(var(--card-gap) * -1);
   margin-top: calc(var(--card-gap) * -1);
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(var(--card-gap) * -1);
-  }
 }
+// @media screen and (min-width: 768px) {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-left: calc(var(--card-gap) * -1);
+
+//  @media screen and (min-width: 480px) {
+//     width: 480px;
+//   }
