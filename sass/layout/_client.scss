@@ -1,6 +1,5 @@
 .client {
   text-align: center;
-  --card-item: 6;
 
   &__link {
     display: flex;
@@ -14,6 +13,16 @@
     &:hover,
     &:focus {
       color: var(--accent-color);
+    }
+  }
+
+  &__item {
+    --card-item: 2;
+    @media screen and (min-width: 768px) {
+      --card-item: 3;
+    }
+    @media screen and (min-width: 1200px) {
+      --card-item: 6;
     }
   }
 
