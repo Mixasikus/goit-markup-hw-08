@@ -2,7 +2,7 @@
   @include font(28px, null, 1.18, null);
   color: var(--title-text-color);
   margin-bottom: 30px;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     @include font(36px, null, 1.16, null);
     margin-bottom: 50px;
   }

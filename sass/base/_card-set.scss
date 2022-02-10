@@ -2,11 +2,6 @@
   flex-basis: calc(100% / var(--card-item) - var(--card-gap));
   margin-top: var(--card-gap);
   margin-left: var(--card-gap);
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / var(--card-item) - var(--card-gap));
-  }
 }
 
 .card-set {

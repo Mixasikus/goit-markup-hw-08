@@ -20,10 +20,10 @@
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
     --card-item: 1;
-    @media screen and (min-width: 768px) {
+    @include tab {
       --card-item: 2;
     }
-    @media screen and (min-width: 1200px) {
+    @include desk {
       --card-item: 4;
     }
   }
