@@ -122,31 +122,49 @@
       </section>
 
       <!-- work -->
-      <!-- <section class="work section">
+      <section class="work section">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="card-set list">
             <li class="work__item item">
               <div class="work__wrap">
-                <img src="./images/computer.jpg" alt="компьютер" width="370" height="294" />
+                <img
+                  srcset="./images/computer-1x.jpg 1x, ./images/computer-2x.jpg 2x"
+                  src="./images/computer-1x.jpg"
+                  alt="компьютер"
+                  width="370"
+                  height="294"
+                />
                 <p class="work__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="work__item item">
               <div class="work__wrap">
-                <img src="./images/notebook.jpg" alt="ноутбук" width="370" height="294" />
+                <img
+                  srcset="./images/notebook-1x.jpg 1x, ./images/notebook-2x.jpg 2x"
+                  src="./images/notebook-1x.jpg"
+                  alt="ноутбук"
+                  width="370"
+                  height="294"
+                />
                 <p class="work__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="work__item item">
               <div class="work__wrap">
-                <img src="./images/tablet.jpg" alt="планшет" width="370" height="294" />
+                <img
+                  srcset="./images/tablet-1x.jpg 1x, ./images/tablet-2x.jpg 2x"
+                  src="./images/tablet-1x.jpg"
+                  alt="планшет"
+                  width="370"
+                  height="294"
+                />
                 <p class="work__text">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- team -->
       <section class="team section">
@@ -155,7 +173,25 @@
           <ul class="card-set list">
             <li class="team__item item">
               <div class="team__img">
-                <img src="./images/igor.jpg" alt="дизайнер продуктов" width="270" height="260" />
+                <picture>
+                  <source
+                    srcset="./images/igor-desk-1x.jpg 1x, ./images/igor-desk-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/igor-desk-1x.jpg" alt="дизайнер продуктов" />
+                </picture>
+                <picture>
+                  <source
+                    srcset="./images/igor-tab-1x.jpg 1x, ./images/igor-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="./images/igor-mob-1x.jpg 1x, ./images/igor-mob-2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                </picture>
               </div>
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p lang="en" class="team__profession">Product Designer</p>
