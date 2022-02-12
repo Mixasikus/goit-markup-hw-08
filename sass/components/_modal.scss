@@ -25,10 +25,11 @@
   min-height: 609px;
   padding: 40px;
 
-  @media screen and (min-width: 480px) {
+  @include tel {
     width: 450px;
   }
-  @media screen and (min-width: 1200px) {
+
+  @include desk {
     width: 528px;
     min-height: 581px;
     position: absolute;
