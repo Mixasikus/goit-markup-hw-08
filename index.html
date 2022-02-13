@@ -24,7 +24,7 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="container header__container">
+      <div class="container">
         <a href="./index.html" class="logo link">Web<span class="logo__header">Studio</span></a>
         <nav class="site-nav">
           <ul class="site-list list">
@@ -57,6 +57,13 @@
             </a>
           </li>
         </ul>
+        <div class="btn-menu">
+          <button type="button" class="menu-open-btn">
+            <svg class="menu-open__icon" width="24px" height="16px">
+              <use href="./images/menu-open.svg#menu-open"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -428,8 +435,8 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main> -->
+      </section> -->
+    </main>
 
     <!-- footer -->
     <!-- <footer class="footer">
@@ -552,15 +559,13 @@
             ></textarea>
           </div>
           <div class="conditions">
-            <label class="checkbox">
-              <input class="input__checkbox" type="checkbox" name="check" />
+            <label class="checkbox" for="check">
+              <input class="input__checkbox" type="checkbox" name="check" id="check" />
               <span class="checkbox__icon"></span>
-              <p class="checkbox__text">
-                Соглашаюсь с рассылкой и принимаю
-                <a class="conditions__link" href="" target="_blank" rel="noopener noreferrer"
-                  >Условия договора</a
-                >
-              </p>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="conditions__link" href="" target="_blank" rel="noopener noreferrer"
+                >Условия договора</a
+              >
             </label>
           </div>
           <button type="submit" class="form-btn button__universal">Отправить</button>

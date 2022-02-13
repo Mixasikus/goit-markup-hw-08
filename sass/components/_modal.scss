@@ -186,12 +186,20 @@
   margin-bottom: 30px;
 }
 
-.checkbox__text {
-  @include font(12px, null, 1.16, 0.03em);
-  @include desk {
-    @include font(14px, null, 1.7, 0.03em);
-  }
+.input__checkbox {
+  // display: flex;
+  // @include font(12px, null, 1.16, 0.03em);
+  // @include desk {
+  //   @include font(14px, null, 1.7, 0.03em);
+  // }
 }
+
+// .checkbox__text {
+//   @include font(12px, null, 1.16, 0.03em);
+//   @include desk {
+//     @include font(14px, null, 1.7, 0.03em);
+//   }
+// }
 
 .conditions__link {
   color: var(--accent-color);
