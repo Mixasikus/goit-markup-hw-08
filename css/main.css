@@ -419,10 +419,6 @@ body {
   margin-bottom: 30px;
 }
 
-.input__checkbox {
-  display: flex;
-}
-
 .conditions__link {
   color: var(--accent-color);
 }
@@ -549,18 +545,22 @@ body {
   margin-right: 10px;
 }
 
+.btn-menu {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+}
+
 .menu-open-btn {
+  display: flex;
   padding: 0;
   border: none;
   background-color: transparent;
 }
 
 .menu-open__icon {
-  position: absolute;
   width: 40px;
   height: 40px;
-  left: 425px;
-  top: 10px;
 }
 
 .hero {
