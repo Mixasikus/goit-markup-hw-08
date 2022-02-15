@@ -94,3 +94,44 @@
   width: 40px;
   height: 40px;
 }
+
+.mob-menu {
+  position: fixed;
+  background-color: var(--primary-white-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.menu-close-btn {
+  margin-left: auto;
+  margin-bottom: 8px;
+  display: flex;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.menu-close__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.mob-menu-list__link {
+  @include font(40px, 500, 1.7, 0.02em);
+  color: var(--title-text-color);
+}
+
+.mob-menu-list__item {
+  padding-left: 40px;
+}
+
+.mob-menu-list__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}

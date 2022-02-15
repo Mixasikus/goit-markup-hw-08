@@ -19,6 +19,7 @@
   border-radius: 4px;
   position: relative;
   margin: 0 auto;
+
   transition: transform 500ms;
 
   width: 90vw;
@@ -186,20 +187,17 @@
   margin-bottom: 30px;
 }
 
-.input__checkbox {
-  // display: flex;
-  // @include font(12px, null, 1.16, 0.03em);
-  // @include desk {
-  //   @include font(14px, null, 1.7, 0.03em);
-  // }
+.checkbox__text {
+  @include tel {
+    @include font(12px, null, 1.16, 0.03em);
+  }
 }
 
-// .checkbox__text {
-//   @include font(12px, null, 1.16, 0.03em);
-//   @include desk {
-//     @include font(14px, null, 1.7, 0.03em);
-//   }
-// }
+.checkbox__text {
+  @include desk {
+    @include font(14px, null, 1.7, 0.03em);
+  }
+}
 
 .conditions__link {
   color: var(--accent-color);
