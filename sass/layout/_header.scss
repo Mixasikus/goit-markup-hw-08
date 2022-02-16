@@ -88,6 +88,15 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  color: var(--accent-color);
+  &:hover .menu-open__icon,
+  &:focus .menu-open__icon {
+    fill: currentColor;
+  }
+}
+
+.menu-open__icon {
+  transition: var(--transition);
 }
 
 .menu-open__icon {
@@ -114,16 +123,33 @@
   border: none;
   padding: 0;
   background-color: transparent;
+  color: var(--accent-color);
+  &:hover .menu-close__icon,
+  &:focus .menu-close__icon {
+    fill: currentColor;
+  }
+}
+
+.menu-close__icon {
+  transition: var(--transition);
 }
 
 .menu-close__icon {
   width: 40px;
   height: 40px;
 }
+.mob-menu__list {
+  display: inline-block;
+}
 
 .mob-menu__link {
   @include font(40px, 500, 1.7, 0.02em);
   color: var(--title-text-color);
+  transition: var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mob-menu__item,
@@ -137,12 +163,22 @@
 .mob-tel__link {
   @include font(34px, 500, 1.17, 0.02em);
   color: var(--accent-color);
+  transition: var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--title-text-color);
+  }
 }
 
 .mob-mail__link {
   @include font(24px, 500, 1.16, 0.02em);
   display: block;
   margin-bottom: 64px;
+  transition: var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mob-social__list {
@@ -153,6 +189,15 @@
 .mob-social__item {
   &:not(:last-child) {
     margin-right: 10px;
+  }
+}
+
+.mob-social__link {
+  color: var(--accent-color);
+  transition: var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--title-text-color);
   }
 }
 
