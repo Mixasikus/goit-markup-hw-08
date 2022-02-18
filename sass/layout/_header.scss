@@ -114,6 +114,20 @@
   width: 100vw;
   height: 100vh;
   z-index: 1;
+  transition: left 500ms, visibility 500ms;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.mob-menu.is-hidden {
+  left: 100%;
+}
+
+.mob-menu-top {
+  margin-bottom: auto;
 }
 
 .menu-close-btn {
@@ -158,6 +172,10 @@
     margin-bottom: 32px;
   }
   padding-left: 40px;
+}
+
+.mob-contact-bottom {
+  margin-top: auto;
 }
 
 .mob-tel__link {

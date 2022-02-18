@@ -58,55 +58,61 @@
           </li>
         </ul>
         <div class="btn-menu">
-          <button type="button" class="menu-open-btn">
+          <button type="button" class="menu-open-btn" data-menu-open>
             <svg class="menu-open__icon" width="24px" height="16px">
               <use href="./images/menu-open.svg#menu-open"></use>
             </svg>
           </button>
         </div>
       </div>
-      <div class="mob-menu">
+      <div class="mob-menu is-hidden" data-menu>
         <div class="container">
-        <button type="button" class="menu-close-btn">
-          <svg class="menu-close__icon width="18.67px" height="18.67px">
-            <use href="./images/menu-close.svg#menu-close"></use>
-          </svg>
-        </button>
-        <ul class="mob-menu__list list">
-            <li class="mob-menu__item">
-              <a href="" class="mob-menu__link link">Студия</a>
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close__icon" width="18.67px" height="18.67px">
+              <use href="./images/menu-close.svg#menu-close"></use>
+            </svg>
+          </button>
+          <div class="mob-menu-top">
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-contact-bottom">
+            <ul class="mob-contact__list list">
+              <li class="mob-contact__item">
+                <a href="tel:+380961111111" class="mob-tel__link link">+38 096 111 11 11</a>
+              </li>
+              <li class="mob-contact__item">
+                <a href="mailto:info@devstudio.com" class="mob-mail__link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <ul class="mob-social__list list">
+            <li class="mob-social__item">
+              <a href="" class="mob-social__link link line">Instagram</a>
             </li>
-            <li class="mob-menu__item">
-              <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+            <li class="mob-social__item">
+              <a href="" class="mob-social__link link line">Twitter</a>
             </li>
-            <li class="mob-menu__item">
-              <a href="" class="mob-menu__link link">Контакты</a>
+            <li class="mob-social__item">
+              <a href="" class="mob-social__link link line">Facebook</a>
+            </li>
+            <li class="mob-social__item">
+              <a href="" class="mob-social__link link">LinkedIn</a>
             </li>
           </ul>
-          <ul class="mob-contact__list list"> 
-            <li class="mob-contact__item">
-            <a href="tel:+380961111111" class="mob-tel__link link">+38 096 111 11 11</a>
-          </li>
-          <li class="mob-contact__item">
-            <a href="mailto:info@devstudio.com" class="mob-mail__link link">info@devstudio.com</a>
-          </li>
-        </ul>
-        <ul class="mob-social__list list">
-          <li class="mob-social__item">
-            <a href="" class="mob-social__link link line">Instagram</a>
-          </li>
-          <li class="mob-social__item">
-            <a href="" class="mob-social__link link line">Twitter</a>
-          </li>
-          <li class="mob-social__item">
-             <a href="" class="mob-social__link link line">Facebook</a>
-          </li>
-          <li class="mob-social__item">
-            <a href="" class="mob-social__link link">LinkedIn</a>
-          </li>
-        </ul>
+        </div>
       </div>
-    </div>
     </header>
 
     <main>
@@ -119,7 +125,7 @@
       </section>
 
       <!-- feature -->
-      <!-- <section class="feature section">
+      <section class="feature section">
         <div class="container">
           <ul class="card-set list">
             <li class="feature__item item">
@@ -168,10 +174,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- work -->
-      <!-- <section class="work section">
+      <section class="work section">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="card-set list">
@@ -213,7 +219,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- team -->
       <section class="team section">
@@ -429,7 +435,7 @@
       </section>
 
       <!-- клиенты -->
-      <!-- <section class="section client">
+      <section class="section client">
         <div class="container">
           <h1 class="section__title">Постоянные клиенты</h1>
           <ul class="card-set list">
@@ -477,11 +483,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-con-item">
           <a href="/" class="logo link">Web<span class="logo__footer">Studio</span></a>
@@ -558,7 +564,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- backdrop -->
     <div class="backdrop is-hidden" data-modal>
@@ -605,10 +611,11 @@
               <input class="input__checkbox" type="checkbox" name="check" id="check" />
               <span class="checkbox__icon"></span>
               <span class="checkbox__text">
-              Соглашаюсь с рассылкой и принимаю
-              <a class="conditions__link" href="" target="_blank" rel="noopener noreferrer"
-                >Условия договора</a
-              ></span>
+                Соглашаюсь с рассылкой и принимаю
+                <a class="conditions__link" href="" target="_blank" rel="noopener noreferrer"
+                  >Условия договора</a
+                ></span
+              >
             </label>
           </div>
           <button type="submit" class="form-btn button__universal">Отправить</button>
@@ -616,5 +623,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
