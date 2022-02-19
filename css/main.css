@@ -587,8 +587,16 @@ body {
 }
 
 .contact-list__link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+  transition: color var(--transition);
+}
+
+.contact-list__link:hover, .contact-list__link:focus, .contact-list__link.current {
+  color: var(--accent-color);
 }
 
 .contact-list__icon {
@@ -761,6 +769,10 @@ body {
 
 .mob-social__link:hover, .mob-social__link:focus {
   color: var(--title-text-color);
+}
+
+.sitting {
+  color: var(--accent-color);
 }
 
 .line::after {

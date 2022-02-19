@@ -83,8 +83,15 @@
 }
 
 .contact-list__link {
+  @include font(null, 500, 1.14, 0.02em);
   display: flex;
   align-items: center;
+  transition: color var(--transition);
+  &:hover,
+  &:focus,
+  &.current {
+    color: var(--accent-color);
+  }
 }
 
 .contact-list__icon {
@@ -241,6 +248,10 @@
   &:focus {
     color: var(--title-text-color);
   }
+}
+
+.sitting {
+  color: var(--accent-color);
 }
 
 .line::after {
