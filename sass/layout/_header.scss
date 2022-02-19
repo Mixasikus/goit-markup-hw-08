@@ -69,27 +69,18 @@
   @include tab {
     margin-left: auto;
     display: block;
-  }
-
-  @include desk {
-    display: flex;
-    & .site-list__item:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
     & .site-list__item:not(:last-child) {
       margin-bottom: 10px;
     }
   }
+  @include desk {
+    display: flex;
+    & .site-list__item:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
 }
-
-// @media screen and (max-width: 480px) {
-//   .contact-list .site-list__item:not(:last-child) {
-//     margin-bottom: 10px;
-//   }
-// }
 
 .contact-list__link {
   display: flex;

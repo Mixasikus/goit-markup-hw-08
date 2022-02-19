@@ -571,6 +571,9 @@ body {
     margin-left: auto;
     display: block;
   }
+  .contact-list .site-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -579,15 +582,7 @@ body {
   }
   .contact-list .site-list__item:not(:last-child) {
     margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .contact-list {
-    max-width: 480px;
-  }
-  .contact-list .site-list__item:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 }
 
