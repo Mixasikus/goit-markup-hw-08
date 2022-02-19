@@ -568,12 +568,32 @@ body {
 
 @media screen and (min-width: 768px) {
   .contact-list {
-    display: flex;
     margin-left: auto;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
   }
   .contact-list .site-list__item:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+@media screen and (min-width: 480px) {
+  .contact-list {
+    max-width: 480px;
+  }
+  .contact-list .site-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.contact-list__link {
+  display: flex;
+  align-items: center;
 }
 
 .contact-list__icon {
@@ -587,7 +607,7 @@ body {
   margin-left: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .btn-menu {
     display: none;
   }
