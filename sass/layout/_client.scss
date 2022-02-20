@@ -1,3 +1,8 @@
+.client .card-set {
+  display: flex;
+  flex-basis: calc(100% / var(--card-item) - var(--card-gap));
+}
+
 .client {
   text-align: center;
 
