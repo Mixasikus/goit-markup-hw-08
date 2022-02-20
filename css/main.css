@@ -971,9 +971,12 @@ body {
   margin-bottom: 16px;
 }
 
-.client .card-set {
-  display: flex;
-  flex-basis: calc(100% / var(--card-item) - var(--card-gap));
+@media screen and (max-width: 768px) {
+  .client .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .client {
@@ -989,6 +992,12 @@ body {
   border-radius: 4px;
   border: 1px solid currentColor;
   transition: var(--transition);
+}
+
+@media screen and (max-width: 768px) {
+  .client__link {
+    width: 210px;
+  }
 }
 
 .client__link:hover, .client__link:focus {
