@@ -23,15 +23,19 @@
 }
 
 .address-list {
-  margin-bottom: -9px;
   & .address-list__link:hover,
   & .address-list__link:focus {
     color: var(--accent-color);
   }
 }
 
+// это для комп
+// .address-list__item:not(:last-child) {
+//   margin-bottom: 9px;
+// }
+
 .address-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address-list__link[target='_blank'] {
@@ -39,16 +43,25 @@
 }
 
 .container.footer-container {
-  display: flex;
+  // display: flex;
   align-items: baseline;
 }
 
-.footer-con-item:not(:last-child) {
-  margin-right: 70px;
-  &:last-child {
-    margin-left: auto;
-  }
+.footer-con-item {
+  text-align: center;
 }
+
+.footer-con-item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+// это для компьютера
+// .footer-con-item:not(:last-child) {
+//   margin-right: 70px;
+//   &:last-child {
+//     margin-left: auto;
+//   }
+// }
 
 .footer .social__link {
   background: var(--background--color--svg);
@@ -67,9 +80,10 @@
 .footer-form__input {
   @include font($fw: 16);
   height: 50px;
-  min-width: 358px;
+  min-width: 450px;
   padding: 0 15px;
   margin-right: 12px;
+  margin-bottom: 20px;
   outline: none;
 
   color: var(--primary-white-color);
