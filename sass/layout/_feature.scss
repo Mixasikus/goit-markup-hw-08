@@ -12,6 +12,9 @@
   @include font();
   color: var(--title-text-color);
   margin-bottom: 10px;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .feature__item {
