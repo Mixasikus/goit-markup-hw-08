@@ -16,12 +16,6 @@
   font-style: normal;
 }
 
-.address-list__link {
-  display: inline-block;
-  color: var(--secondary-link-color);
-  transition: color var(--transition);
-}
-
 .address-list {
   & .address-list__link:hover,
   & .address-list__link:focus {
@@ -29,39 +23,54 @@
   }
 }
 
-// это для комп
-// .address-list__item:not(:last-child) {
-//   margin-bottom: 9px;
-// }
-
-.address-list__item:not(:last-child) {
-  margin-bottom: 8px;
+.address-list__link {
+  display: inline-block;
+  color: var(--secondary-link-color);
+  transition: color var(--transition);
 }
 
 .address-list__link[target='_blank'] {
   color: var(--primary-white-color);
 }
 
-.container.footer-container {
-  // display: flex;
-  align-items: baseline;
+.address-list__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+@include desk {
+  .address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-container {
+  @include tab {
+    display: flex;
+    align-items: baseline;
+  }
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .footer-con-item {
-  text-align: center;
+  @media screen and (max-width: 1200px) {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+    text-align: center;
+  }
 }
 
-.footer-con-item:not(:last-child) {
-  margin-bottom: 60px;
+@include desk {
+  .footer-con-item:last-child {
+    margin-left: auto;
+  }
+  .footer-con-item:not(:last-child) {
+    margin-right: 70px;
+  }
 }
-
-// это для компьютера
-// .footer-con-item:not(:last-child) {
-//   margin-right: 70px;
-//   &:last-child {
-//     margin-left: auto;
-//   }
-// }
 
 .footer .social__link {
   background: var(--background--color--svg);
@@ -79,11 +88,19 @@
 
 .footer-form__input {
   @include font($fw: 16);
-  height: 50px;
+  @include desk {
+    min-width: 358px;
+  }
+  @media screen and (max-width: 1200px) {
+    display: block;
+    margin-bottom: 20px;
+  }
   min-width: 450px;
+  height: 50px;
+
   padding: 0 15px;
   margin-right: 12px;
-  margin-bottom: 20px;
+
   outline: none;
 
   color: var(--primary-white-color);

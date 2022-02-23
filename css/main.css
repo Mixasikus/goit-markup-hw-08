@@ -1043,35 +1043,61 @@ body {
   font-style: normal;
 }
 
+.address-list .address-list__link:hover,
+.address-list .address-list__link:focus {
+  color: var(--accent-color);
+}
+
 .address-list__link {
   display: inline-block;
   color: var(--secondary-link-color);
   transition: color var(--transition);
 }
 
-.address-list .address-list__link:hover,
-.address-list .address-list__link:focus {
-  color: var(--accent-color);
+.address-list__link[target='_blank'] {
+  color: var(--primary-white-color);
 }
 
 .address-list__item:not(:last-child) {
   margin-bottom: 8px;
 }
 
-.address-list__link[target='_blank'] {
-  color: var(--primary-white-color);
+@media screen and (min-width: 1200px) {
+  .address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
-.container.footer-container {
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
-.footer-con-item {
-  text-align: center;
+@media screen and (max-width: 1200px) {
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
-.footer-con-item:not(:last-child) {
-  margin-bottom: 60px;
+@media screen and (max-width: 1200px) {
+  .footer-con-item {
+    text-align: center;
+  }
+  .footer-con-item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-con-item:last-child {
+    margin-left: auto;
+  }
+  .footer-con-item:not(:last-child) {
+    margin-right: 70px;
+  }
 }
 
 .footer .social__link {
@@ -1094,17 +1120,29 @@ body {
   font-weight: 16;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  height: 50px;
   min-width: 450px;
+  height: 50px;
   padding: 0 15px;
   margin-right: 12px;
-  margin-bottom: 20px;
   outline: none;
   color: var(--primary-white-color);
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   transition: var(--transition);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    min-width: 358px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-form__input {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .footer-form__input::placeholder {
