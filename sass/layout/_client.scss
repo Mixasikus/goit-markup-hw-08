@@ -1,18 +1,7 @@
-.client .card-set {
-  @media screen and (max-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
 .client {
   text-align: center;
 
   &__link {
-    @media screen and (max-width: 768px) {
-      width: 210px;
-    }
     display: flex;
     justify-content: center;
     align-items: center;
