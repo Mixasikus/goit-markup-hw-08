@@ -1,0 +1,41 @@
+// цвет основного текста #757575;
+// вторичный цвет текста #212121;
+// белый #ffffff;
+// акцент #2196F3;
+// вторичный цвет фона #F5F4FA;
+// вторичный акцент #2F303A;
+// цвет кнопки акцент  #2196F3;
+// цвет кнопки для ховера  #188CE8;
+// вторичный фон кнопки #f5f4fa;
+// черный цвет #000000;
+// вторичный цвет для ссылок #rgba(255, 255, 255, 0.6);
+// цвет заднего фона для карточек #ffffff;
+// цвет для бордера #ececec;
+// ещё цвет для бордера #eeeee;
+// цвет для svg элементов #afb1b8;
+// цвет для фона svg элементов #rgba(255, 255, 255, 0.1);
+// цвет для бэкдропа rgba(0, 0, 0, 0.2);
+// цвет для бордера в формах rgba(33, 33, 33, 0.2);
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --secondary-accent: #2f303a;
+  --color-button: #2196f3;
+  --color-button-hover: #188ce8;
+  --secondary-button-background: #f5f4fa;
+  --black-color: #000000;
+  --secondary-link-color: rgba(255, 255, 255, 0.6);
+  --color-border: #ececec;
+  --secondary-color-border: #eeeeee;
+  --color-for-svg-elements: #afb1b8;
+  --background--color--svg: rgba(255, 255, 255, 0.1);
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --backdrop-color: rgba(0, 0, 0, 0.2);
+  --border-form: rgba(33, 33, 33, 0.2);
+  --card-item: 4;
+  --card-gap: 30px;
+}

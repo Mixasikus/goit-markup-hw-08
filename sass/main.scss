@@ -1,28 +1,10 @@
-// цвет основного текста #757575;
-// вторичный цвет текста #212121;
-// белый #ffffff;
-// акцент #2196F3;
-// вторичный цвет фона #F5F4FA;
-// вторичный акцент #2F303A;
-// цвет кнопки акцент  #2196F3;
-// цвет кнопки для ховера  #188CE8;
-// вторичный фон кнопки #f5f4fa;
-// черный цвет #000000;
-// вторичный цвет для ссылок #rgba(255, 255, 255, 0.6);
-// цвет заднего фона для карточек #ffffff;
-// цвет для бордера #ececec;
-// ещё цвет для бордера #eeeee;
-// цвет для svg элементов #afb1b8;
-// цвет для фона svg элементов #rgba(255, 255, 255, 0.1);
-// цвет для бэкдропа rgba(0, 0, 0, 0.2);
-// цвет для бордера в формах rgba(33, 33, 33, 0.2);
-
-@import './utlis/variables';
+//base //utils
+@import './utils/variables';
 @import './base/reset';
-@import './utlis/mixins';
+@import './utils/mixins';
 @import './base/common';
 @import './base/card-set';
-@import './utlis/hidden';
+@import './utils/hidden';
 
 //components
 @import './components/container';
