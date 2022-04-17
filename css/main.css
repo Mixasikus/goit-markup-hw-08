@@ -502,8 +502,16 @@ body {
   align-items: center;
 }
 
-.header__container .logo {
-  margin-right: 93px;
+@media screen and (min-width: 768px) {
+  .header__container .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__container .logo {
+    margin-right: 93px;
+  }
 }
 
 .header__border {
@@ -784,10 +792,10 @@ body {
   background-color: var(--secondary-accent);
   text-align: center;
   width: 100%;
-  max-width: 1600px;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
+  margin-top: 60px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -802,6 +810,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
+    margin-top: 80px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab-1x.jpg);
   }
 }
@@ -815,6 +825,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desk-1x.jpg);
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }

@@ -12,7 +12,12 @@
   }
 
   &__container .logo {
+    @include tab {
+      margin-right: 88px;
+    }
+    @include desk {
     margin-right: 93px;
+    }
   }
 
   &__border {
